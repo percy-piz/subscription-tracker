@@ -1,0 +1,30 @@
+{
+  "name": "subscription-tracker",
+  "private": true,
+  "description": "Serverless bill & subscription tracker on AWS",
+  "workspaces": [
+    "infra",
+    "services"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "synth": "npm run synth -w infra",
+    "deploy": "npm run deploy -w infra",
+    "destroy": "npm run destroy -w infra"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.0"
+  }
+}

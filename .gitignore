@@ -1,0 +1,11 @@
+node_modules/
+dist/
+cdk.out/
+*.js.map
+.env
+.env.*
+!.env.example
+coverage/
+.DS_Store
+# CDK context cache can contain account IDs
+cdk.context.json

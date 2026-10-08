@@ -1,0 +1,25 @@
+{
+  "name": "@subtrack/infra",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p .",
+    "test": "node --import tsx --test test/*.test.ts",
+    "cdk": "cdk",
+    "synth": "cdk synth",
+    "diff": "cdk diff",
+    "deploy": "cdk deploy",
+    "destroy": "cdk destroy"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.272.0",
+    "constructs": "^10.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "aws-cdk": "^2.1145.0",
+    "dotenv": "^16.4.7",
+    "esbuild": "^0.24.0",
+    "tsx": "^4.19.2"
+  }
+}
